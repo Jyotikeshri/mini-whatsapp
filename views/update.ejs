@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Chat</title>
+    <link rel="stylesheet" href="/create.css" />
+  </head>
+  <body>
+    <form action="/chats?_method=PATCH" method="post">
+      <br /><br />
+      <input
+        type="hidden"
+        name="_id"
+        style="display: hidden"
+        value="<%= user._id %>"
+      />
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        type="text"
+        placeholder="enter your msg here!!"
+      ></textarea>
+      <br /><br />
+
+      <br />
+      <br />
+
+      <button class="create">UPDATE</button>
+    </form>
+  </body>
+</html>
